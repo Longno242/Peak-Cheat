@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace ModernModMenu
 {
-    [BepInPlugin("com.yourname.modernmodmenu", "Modern Mod Menu", "1.0.0")]
+    [BepInPlugin("com.longno.modernmodmenu", "Project Encryptic Menu", "1.0.0")]
     public class ModernModMenu : BaseUnityPlugin
     {
         private static ModernModMenu Instance;
@@ -132,7 +132,7 @@ namespace ModernModMenu
 
             windowRect.width = Mathf.Clamp(windowRect.width, 400, 900);
             windowRect.height = Mathf.Clamp(windowRect.height, 400, 800);
-            windowRect = GUI.Window(123456, windowRect, DrawWindow, "⚡ MODERN MOD MENU");
+            windowRect = GUI.Window(123456, windowRect, DrawWindow, "Project Encryptic");
         }
 
         private void DrawWindow(int id)
